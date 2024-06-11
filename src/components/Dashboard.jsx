@@ -1,43 +1,7 @@
-// src/components/Dashboard.js
 import React from "react";
 import { Link } from "react-router-dom";
-import { Bar } from "react-chartjs-2";
 
-const Dashboard = ({ totalJobs, totalContacts, totalDeals }) => {
-  const data = {
-    labels: ["Jobs", "Contacts", "Deals"],
-    datasets: [
-      {
-        label: "Total",
-        // data: [totalJobs, totalContacts, totalDeals],
-        backgroundColor: [
-          "rgba(255, 99, 132, 0.2)",
-          "rgba(54, 162, 235, 0.2)",
-          "rgba(255, 206, 86, 0.2)",
-        ],
-        borderColor: [
-          "rgba(255, 99, 132, 1)",
-          "rgba(54, 162, 235, 1)",
-          "rgba(255, 206, 86, 1)",
-        ],
-        borderWidth: 1,
-      },
-    ],
-  };
-
-  // Options for the chart
-  const options = {
-    scales: {
-      yAxes: [
-        {
-          ticks: {
-            beginAtZero: true,
-          },
-        },
-      ],
-    },
-  };
-
+const Dashboard = () => {
   return (
     <>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
